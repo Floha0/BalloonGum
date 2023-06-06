@@ -17,5 +17,10 @@ public class Obstacle : MonoBehaviour
         if (!playerControllerSc.gameOver){   
             transform.Translate(Vector3.right * Time.fixedDeltaTime * speed * -1);
         }
+
+        if (transform.position.x < -5 && gameObject.CompareTag("Obstacle"))
+        {
+            Destroy(gameObject);
+        }
     }
 }
