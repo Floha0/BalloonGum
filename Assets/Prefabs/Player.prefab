@@ -832,7 +832,7 @@ GameObject:
   - component: {fileID: 6281638114100464818}
   - component: {fileID: -6372446615144354294}
   - component: {fileID: 9111875218088059627}
-  - component: {fileID: 3622003508809618223}
+  - component: {fileID: 3002138029977902951}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -893,9 +893,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c9b402d4b84f3b43aa5f02ceb3e2e23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 8
-  jumpForce: 25
-  gravityModifier: 1
+  gameOver: 0
 --- !u!54 &9111875218088059627
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -912,7 +910,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &3622003508809618223
+--- !u!65 &3002138029977902951
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -923,8 +921,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.6805178, y: 3.0909605, z: 1.137943}
-  m_Center: {x: -0.027588487, y: 1.5144861, z: 0.013794303}
+  m_Size: {x: 3.4325914, y: 3.099536, z: 1.1737568}
+  m_Center: {x: -0.00000011920929, y: 1.5227723, z: 0.019306302}
 --- !u!1 &6281638114093055840
 GameObject:
   m_ObjectHideFlags: 0

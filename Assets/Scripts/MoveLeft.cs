@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Obstacle : MonoBehaviour
+[RequireComponent(typeof(Rigidbody))]
+public class MoveLeft : MonoBehaviour
 {
-    private float speed = 5f;
+    private float speed = 8f;
     private PlayerController playerControllerSc;
 
     void Start()
@@ -15,7 +16,8 @@ public class Obstacle : MonoBehaviour
     void Update()
     {
         if (!playerControllerSc.gameOver){   
-            transform.Translate(Vector3.right * Time.fixedDeltaTime * speed * -1);
+            transform.Translate(Vector3.right * Time.deltaTime * speed * -1);
+            GetComponent<Rigidbody>().MovePosition(transform.position);
         }
 
         if (transform.position.x < -5 && gameObject.CompareTag("Obstacle"))
