@@ -1,2 +1,2 @@
 # BalloonGum
- Obez Balon
+ Project of Unity Junior Programmer Pathway
